@@ -1,6 +1,6 @@
 \section{浮动体}\label{sec:float}
 
-在本节（\cref{sec:float}）中，我们将介绍浮动体的概念、分类及其在论文中的使用。浮动体包括图片、表格和算法等，它们的共同特点是可以自由浮动在页面中，不会影响正文的排版。
+在本节（\cref{sec:float}）中，我们介绍浮动体的概念、分类及其在论文中的使用。浮动体包括图片、表格和算法等，它们的共同特点是可以自由浮动在页面中，不会影响正文的排版。
 
 浮动体可以通过插入代码或使用专门的宏包来实现，常用的宏包有 \pkg{graphicx}、\pkg{float} 和 \pkg{algorithm} 等。在插入浮动体时，需要注意设置浮动体的位置和大小，以保证排版效果。
 
@@ -89,10 +89,7 @@
   \label{fig:subfigure}
 \end{figure}
 
-
-
 总之，在使用 \LaTeX{} 插图时，应该注意浮动体的特性，尽量使用 \pkg{float} 宏包进行浮动体的控制，避免出现排版问题。同时，也应该熟悉插图命令的使用方法，以便于插入单个或多个图形，并设置适当的标题和标签。
-
 
 \subsection{表格}
 
@@ -103,6 +100,7 @@
 表格的编排建议采用国际通行的三线表\footnote{三线表以其形式简洁、功能分明、阅读方便而在科技论文中被推荐使用。三线表通常只有3条线，即顶线、底线和栏目线，没有竖线。}。可以使用 \pkg{booktabs} 宏包提供的 \cs{toprule}、\cs{midrule} 和 \cs{bottomrule} 命令来绘制三线表。同时，\pkg{longtable} 宏包可以与三线表很好地配合使用，可以排版较长的表格。
 
 要编写三线表，需要在表格的头部、底部和每一栏之间绘制水平线。其中，\cs{toprule} 绘制顶部线，\cs{midrule} 绘制中部线，\cs{bottomrule} 绘制底部线。可以按照如下方式绘制三线表：
+
 \begin{table}[!hpt]
   \caption{一个三线表}
   \label{tab:firstone}
@@ -120,8 +118,7 @@
 
 \subsubsection{复杂表格}
 
-我们经常会在表格下方标注数据来源，或者对表格里面的条目进行解释。可以用
-\pkg{threeparttable} 实现带有脚注的表格，如\cref{tab:bigtable}。
+我们经常会在表格下方标注数据来源，或者对表格里面的条目进行解释。可以用 \pkg{threeparttable} 实现带有脚注的表格，如\cref{tab:bigtable}。
 
 \begin{table}[!htbp]
   \centering
@@ -144,11 +141,9 @@
   \end{threeparttable}
 \end{table}
 
-为了编写更复杂的表格，我们可以使用 \href{https://www.tablesgenerator.com/}{Tables Generator} 来生成 \LaTeX{} 代码。该工具可以方便地设置表格的列数、行数、内容、格式、颜色等属性，支持常用的表格类型和样式，并且可以实时生成 \LaTeX{} 代码和预览效果，避免手动编写 \LaTeX{} 代码时出错。
+为了编写更复杂的表格，我们可以使用 \href{https://www.tablesgenerator.com}{Tables Generator} 来生成 \LaTeX{} 代码。该工具可以方便地设置表格的列数、行数、内容、格式、颜色等属性，支持常用的表格类型和样式，并且可以实时生成 \LaTeX{} 代码和预览效果，避免手动编写 \LaTeX{} 代码时出错。
 
-
-如某个表需要转页接排，可以用 \pkg{longtable} 实现。接排时表题省略，表头应重复书
-写，并在右上方写“续表 X”，如\cref{tab:performance}。
+如某个表需要转页接排，可以用 \pkg{longtable} 实现。接排时表题省略，表头应重复书写，并在右上方写“续表 X”，如\cref{tab:performance}。
 
 \begin{ThreePartTable}
   \begin{TableNotes}
@@ -157,25 +152,25 @@
   \end{TableNotes}
   \begin{longtable}[c]{c*{6}{r}}
     \caption{实验数据}
-    \label{tab:performance}                                                                                                                      \\
+    \label{tab:performance}                                                                                    \\
     \toprule
-    \textbf{测试程序\tnote{b}} & \multicolumn{1}{c}{\textbf{正常运行}}   & \multicolumn{1}{c}{\textbf{同步}}
-                           & \multicolumn{1}{c}{\textbf{检查点}}    & \multicolumn{1}{c}{\textbf{卷回恢复}}
-                           & \multicolumn{1}{c}{\textbf{进程迁移}}   & \multicolumn{1}{c}{\textbf{检查点}}                                              \\
-                           & \multicolumn{1}{c}{\textbf{时间} (s)} & \multicolumn{1}{c}{\textbf{时间} (s)}
-                           & \multicolumn{1}{c}{\textbf{时间} (s)} & \multicolumn{1}{c}{\textbf{时间} (s)}
-                           & \multicolumn{1}{c}{\textbf{时间} (s)} & \textbf{文件}（KB）                                                               \\
+    \textbf{测试程序\tnote{b}} & \multicolumn{1}{c}{\textbf{正常运行}} & \multicolumn{1}{c}{\textbf{同步}}
+                           & \multicolumn{1}{c}{\textbf{检查点}}       & \multicolumn{1}{c}{\textbf{卷回恢复}}
+                           & \multicolumn{1}{c}{\textbf{进程迁移}}     & \multicolumn{1}{c}{\textbf{检查点}}   \\
+                           & \multicolumn{1}{c}{\textbf{时间} (s)}     & \multicolumn{1}{c}{\textbf{时间} (s)}
+                           & \multicolumn{1}{c}{\textbf{时间} (s)}     & \multicolumn{1}{c}{\textbf{时间} (s)}
+                           & \multicolumn{1}{c}{\textbf{时间} (s)}     & \textbf{文件}（KB）                   \\
     \midrule
     \endfirsthead
-    \multicolumn{7}{r}{\textbf{续表~\thetable}}                                                                                                    \\
+    \multicolumn{7}{r}{\textbf{续表~\thetable}} \\
 
     \toprule
-    \textbf{测试程序\tnote{b}} & \multicolumn{1}{c}{\textbf{正常运行}}   & \multicolumn{1}{c}{\textbf{同步}}
-                           & \multicolumn{1}{c}{\textbf{检查点}}    & \multicolumn{1}{c}{\textbf{卷回恢复}}
-                           & \multicolumn{1}{c}{\textbf{进程迁移}}   & \multicolumn{1}{c}{\textbf{检查点}}                                              \\
-                           & \multicolumn{1}{c}{\textbf{时间} (s)} & \multicolumn{1}{c}{\textbf{时间} (s)}
-                           & \multicolumn{1}{c}{\textbf{时间} (s)} & \multicolumn{1}{c}{\textbf{时间} (s)}
-                           & \multicolumn{1}{c}{\textbf{时间} (s)} & \textbf{文件}（KB）                                                               \\
+    \textbf{测试程序\tnote{b}} & \multicolumn{1}{c}{\textbf{正常运行}} & \multicolumn{1}{c}{\textbf{同步}}
+                           & \multicolumn{1}{c}{\textbf{检查点}}       & \multicolumn{1}{c}{\textbf{卷回恢复}}
+                           & \multicolumn{1}{c}{\textbf{进程迁移}}     & \multicolumn{1}{c}{\textbf{检查点}}   \\
+                           & \multicolumn{1}{c}{\textbf{时间} (s)}     & \multicolumn{1}{c}{\textbf{时间} (s)}
+                           & \multicolumn{1}{c}{\textbf{时间} (s)}     & \multicolumn{1}{c}{\textbf{时间} (s)}
+                           & \multicolumn{1}{c}{\textbf{时间} (s)}     & \textbf{文件}（KB）                   \\
     \midrule
     \endhead
     \hline
@@ -230,13 +225,9 @@
   \end{longtable}
 \end{ThreePartTable}
 
-
-
 \subsection{算法环境}
 
-算法环境可以使用 \pkg{algorithms} 宏包或者较新的 \pkg{algorithm2e} 实现。
-\cref{algo:algorithm} 是一个使用 \pkg{algorithms} 的例子。关于排版算法环境
-的具体方法，请阅读相关宏包的官方文档。
+算法环境可以使用 \pkg{algorithms} 宏包或者较新的 \pkg{algorithm2e} 实现。\cref{algo:algorithm} 是一个使用 \pkg{algorithms} 的例子。关于排版算法环境的具体方法，请阅读相关宏包的官方文档。
 
 \begin{algorithm}
   \caption{计算斐波那契数列}\label{algo:algorithm}
@@ -261,8 +252,6 @@
 
 \cref{algo:algorithm} 的Python代码如\cref{lst:fibonacci} 所示。
 
-
-
 \begin{listing}[htbp]
   \begin{minted}{python}
 def fibonacci(n: int) -> int:
@@ -270,14 +259,15 @@ def fibonacci(n: int) -> int:
     Calculates the nth Fibonacci number.
 
     Args:
-        n (int): Index of the desired Fibonacci number. Must be non-negative.
+        n (int): Index of the desired Fibonacci number. Must be non-negative
 
     Returns:
-        int: The nth Fibonacci number.
+        int: The nth Fibonacci number
 
     Raises:
-        ValueError: If the input is negative.
+        ValueError: If the input is negative
     """
+
     if n < 0:
         raise ValueError("Negative arguments are not supported")
     if n == 0:

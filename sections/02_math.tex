@@ -11,9 +11,9 @@
 \begin{itemize}
   \item \num{12345272.42146}：显示长数字。
   \item \num{9+-3i}：显示复数。
-        % \item \complexnum{1+-2i}  % For TeXLive 2021, siunitx >= 3.0
+  % \item \complexnum{1+-2i} % For TeXLive 2021, siunitx >= 3.0
   \item \num{9.624 x 8.18 x 1.745}：显示乘积表达式。
-        % \item \numproduct{1.654 x 2.34 x 3.430}  % For TeXLive 2021, siunitx >= 3.0
+=  % \item \numproduct{1.654 x 2.34 x 3.430} % For TeXLive 2021, siunitx >= 3.0
   \item \num{1.234567e8}：以科学计数法显示数字。
   \item \num{-19.7}：显示负号。
   \item \num{3.2d-5}：显示数字和指数，使用小写的 d 来指示指数。
@@ -69,8 +69,8 @@
 
 \subsection{数学符号和公式}
 
-按照国标 GB/T 3102.11—1993《物理科学和技术中使用的数学符号》，
-微分符号 $\dd$ 应使用直立体。除此之外，数学常数也应使用直立体：
+按照国标 GB/T 3102.11—1993《物理科学和技术中使用的数学符号》，微分符号 $\dd$ 应使用直立体。除此之外，数学常数也应使用直立体：
+
 \begin{itemize}
   \item 微分符号 $\dd$：\cs{dd}
   \item 圆周率 $\uppi$：\cs{uppi}
@@ -79,6 +79,7 @@
 \end{itemize}
 
 公式应另起一行居中排版。公式后应注明编号，按章顺序编排，编号右端对齐。
+
 \begin{equation}
   \frac{\dd^2}{\dd t^2}x(t)+\omega^2x(t)=\sin(t)
 \end{equation}
@@ -87,11 +88,13 @@
 \end{equation}
 
 公式末尾是需要添加标点符号的，至于用逗号还是句号，取决于公式下面一句是接着公式说的，还是另起一句。
+
 \begin{equation}
   \sum_{n=1}^{\infty}\frac{\cos(nx)}{n^2}=\frac{\uppi^2}{6}-\frac{x^2}{4}
 \end{equation}
 
 公式较长时最好在等号“$=$”处转行。
+
 \begin{align}
        & I(X_1;X_2)-I(X_1;X_2|X_3) \nonumber    \\
   =    & H(X_2)-H(X_2|X_3) \nonumber            \\
@@ -102,6 +105,7 @@
 \end{align}
 
 如果在等号处转行难以实现，也可在 $+$、$-$、$\times$、$\div$ 运算符号处转行，转行时运算符号仅书写于转行式前，不重复书写。
+
 \begin{multline}
   \frac{1}{2} \Delta (f_{ij} f^{ij}) =
   2 \left(\sum_{i<j} \chi_{ij}(\sigma_{i} - \sigma_{j})^{2}

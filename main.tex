@@ -1,4 +1,4 @@
-\documentclass[oneside]{style/tongjithesis} % 双面模式请将 oneside 改为 twoside
+\documentclass[oneside]{style/tongjithesis}
 \usepackage{style/tongjithesis}
 
 \begin{document}
@@ -7,27 +7,33 @@
 \clearchapterpage
 
 \pagestyle{firststyle}
-\input{sections/00_abstract.tex}
 
+\input{sections/00_abstract.tex}
 \clearpage
-\tableofcontents   %放置目录
+
+\tableofcontents
 \clearchapterpage
 
 \pagestyle{mainstyle}
-\input{sections/01_intro}
+
+\input{sections/01_introduction}
 \clearpage
+
 \input{sections/02_math}
 \clearpage
+
 \input{sections/03_reference}
 \clearpage
+
 \input{sections/04_float}
 \clearpage
+
 \input{sections/05_conclusion}
 \clearpage
 
 \printbibliography[heading=bibintoc,title=参考文献]
-
 \clearpage
+
 \input{sections/thanks}
 
 \end{document}

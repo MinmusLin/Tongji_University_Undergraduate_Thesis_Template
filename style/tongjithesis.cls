@@ -90,19 +90,19 @@
 \fancyput*(-0.8cm,-8.5cm){$|$}
 \fancyput*(-0.8cm,-9.1cm){$|$}
 \fancyput*(-0.8cm,-9.7cm){$|$}
-\fancyput*(-1.0cm,-10.3cm){装}
+\fancyput*(-0.93cm,-10.3cm){装}
 \fancyput*(-0.8cm,-10.9cm){$|$}
 \fancyput*(-0.8cm,-11.5cm){$|$}
 \fancyput*(-0.8cm,-12.1cm){$|$}
 \fancyput*(-0.8cm,-12.7cm){$|$}
 \fancyput*(-0.8cm,-13.3cm){$|$}
-\fancyput*(-1.0cm,-13.9cm){订}
+\fancyput*(-0.93cm,-13.9cm){订}
 \fancyput*(-0.8cm,-14.5cm){$|$}
 \fancyput*(-0.8cm,-15.1cm){$|$}
 \fancyput*(-0.8cm,-15.7cm){$|$}
 \fancyput*(-0.8cm,-16.3cm){$|$}
 \fancyput*(-0.8cm,-16.9cm){$|$}
-\fancyput*(-1.0cm,-17.5cm){线}
+\fancyput*(-0.93cm,-17.5cm){线}
 \fancyput*(-0.8cm,-18.1cm){$|$}
 \fancyput*(-0.8cm,-18.7cm){$|$}
 \fancyput*(-0.8cm,-19.3cm){$|$}
@@ -322,7 +322,7 @@
       \vskip 30pt
 
       % 黑体小初
-      \zihao{-0}\heiti{本科毕业设计（论文）}
+      \zihao{-0}\heiti{毕业设计（论文）}
       \vskip 60pt
 
       % 黑体小二
@@ -362,7 +362,7 @@
 
   \vskip 5mm
   \noindent{\songti\zihao{5}{
-      \textbf{关键词：}#2
+    \textbf{\bf 关键词：}#2
     }}~\\
 }
 
@@ -387,7 +387,7 @@
 
   \vskip 13.65pt % 小五字体单倍行距 13.65pt
   \noindent{\heiti\zihao{5}
-    \textbf{Key words:\quad}#2
+    \textbf{Key words: }#2
   }
   \par
 }
