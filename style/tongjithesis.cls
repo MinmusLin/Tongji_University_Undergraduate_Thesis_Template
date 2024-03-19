@@ -43,6 +43,7 @@
 
 % 画边界线
 \RequirePackage{fancybox}
+
 \makeatletter
 \@ifclasswith{tongjithesis}{twoside}{
 \fancyput*(\ifodd\value{page} -0.8cm\else 16.7cm\fi,-4.3cm){$|$}
@@ -260,6 +261,7 @@
       aftertitle={\par},                % 标题后添加一个空行
     }
 }
+
 \setcounter{secnumdepth}{5}
 
 
@@ -313,12 +315,16 @@
     \begin{center}
       \thisfancyput(-0.75cm,-13cm){}
       \vspace*{\fill}
+
       \includegraphics[height=2.25cm]{figures/tongji.pdf}
+
       \zihao{-2}\MakeUppercase{\textbf{\tongjiuniversityeng}}
       \vskip 30pt
+
       % 黑体小初
       \zihao{-0}\heiti{本科毕业设计（论文）}
       \vskip 60pt
+
       % 黑体小二
       \begin{information}{M{5em}M{22em}}
         \zihao{-2}\heiti{课题名称} & \ulinecentered{\tongjithesistitle} \\
@@ -330,6 +336,7 @@
         \zihao{-2}\heiti{指导教师} & \ulinecentered{\tongjithesisadvisor} \\
         \zihao{-2}\heiti{日\quad{}\quad{}期} & \ulinecentered{\tongjithesisyear{}年\tongjithesismonth{}月\tongjithesisday{}日} \\
       \end{information}
+
       \vspace*{\fill}
     \end{center}
   \end{titlepage}
