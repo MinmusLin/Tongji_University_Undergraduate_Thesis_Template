@@ -7,11 +7,11 @@
 
 % 加载 ctexart 类，有关该类简单说明，see https://www.overleaf.com/learn/latex/Chinese
 % 该类提供包括但不限于 \heiti \zihao 等指令
-\LoadClass[UTF8,a4paper,fontset=fandol]{ctexart}
+% \LoadClass[UTF8,a4paper,fontset=fandol]{ctexart}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \LoadClass[UTF8,a4paper,fontset=adobe]{ctexart}
+\LoadClass[UTF8,a4paper,fontset=adobe]{ctexart}
 % 若需要使用包含所有 GBK 字符的 Adobe 字体，可使用如上命令
 % 需要完成 README.md 中提到的字体安装步骤
 % Overleaf 上使用该命令时编译速度会变慢很多，建议本地编译
