@@ -6,9 +6,9 @@ Tongji_University_Undergraduate_Thesis_Template
 
 ## 仓库简介
 
-Tongji university undergraduate thesis template.
+Tongji university undergraduate thesis template (STEM).
 
-同济大学本科毕业设计（论文）模板。
+同济大学本科毕业设计（论文）模板（理工类）。
 
 ## 样例展示
 
@@ -37,4 +37,4 @@ This repository is a fork originally created by [TJ-CSCCG](http://github.com/TJ-
 
 ## 文档更新日期
 
-2024年3月19日
+2024年3月20日
