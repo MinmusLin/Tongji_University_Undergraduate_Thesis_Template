@@ -33,8 +33,8 @@ lualatex.exe -synctex=1 -interaction=nonstopmode -shell-escape %.tex
 
 This repository is a fork originally created by [TJ-CSCCG](http://github.com/TJ-CSCCG). We would like to express our gratitude to [YukuanHU](https://github.com/YukuanHu), [ganler](https://github.com/ganler) and [skyleaworlder](https://github.com/skyleaworlder) for their contributions and efforts.
 
-这个仓库最初是由 [TJ-CSCCG](http://github.com/TJ-CSCCG) 创建的分支。我们要感谢 [YukuanHU](https://github.com/YukuanHu), [ganler](https://github.com/ganler) 与 [skyleaworlder](https://github.com/skyleaworlder) 对同济大学本科毕业设计（论文）模板的贡献。
+这个仓库最初是由 [TJ-CSCCG](http://github.com/TJ-CSCCG) 创建的分支。我们要感谢 [YukuanHU](https://github.com/YukuanHu), [ganler](https://github.com/ganler) 与 [skyleaworlder](https://github.com/skyleaworlder) 对同济大学本科毕业设计（论文）模板（理工类）的贡献。
 
 ## 文档更新日期
 
-2024年3月20日
+2024年3月25日
