@@ -12,6 +12,8 @@ Tongji university undergraduate thesis template (STEM).
 
 ## 样例展示
 
+The following are sequentially shown: "Cover", "Chinese Abstract", "Table of Contents", "Main Content", "References", and "Acknowledgments".
+
 以下依次展示 “封面”、“中文摘要”、“目录”、“主要内容”、“参考文献” 与 “谢辞”。
 
 <p align="center">
@@ -37,4 +39,4 @@ This repository is a fork originally created by [TJ-CSCCG](http://github.com/TJ-
 
 ## 文档更新日期
 
-2024年3月25日
+2024年3月31日
