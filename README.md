@@ -10,6 +10,20 @@ Tongji university undergraduate thesis template (STEM).
 
 同济大学本科毕业设计（论文）模板（理工类）。
 
+## 仓库组成
+
+* `/figures`
+图片文件
+
+* `/sections`
+章节文件
+
+* `/style`
+样式文件
+
+* `main.tex`
+主文档文件
+
 ## 样例展示
 
 The following are sequentially shown: "Cover", "Chinese Abstract", "Contents", "Main Content", "References", and "Acknowledgments".
@@ -39,4 +53,4 @@ This repository is a fork originally created by [TJ-CSCCG](http://github.com/TJ-
 
 ## 文档更新日期
 
-2024年5月5日
+2024年5月8日
