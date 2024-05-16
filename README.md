@@ -21,6 +21,9 @@ Tongji university undergraduate thesis template (STEM).
 * `/style`
 样式文件
 
+* `main.pdf`
+示例 PDF 文档文件
+
 * `main.tex`
 主文档文件
 
@@ -53,4 +56,4 @@ This repository is a fork originally created by [TJ-CSCCG](http://github.com/TJ-
 
 ## 文档更新日期
 
-2024年5月8日
+2024年5月16日
