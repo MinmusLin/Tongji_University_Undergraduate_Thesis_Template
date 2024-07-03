@@ -2,20 +2,20 @@
 % tongjithesis
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+
 % 数学符号
 % 使用更现代的 newtx
 % see https://tex.stackexchange.com/questions/56876/times-new-roman-fonts-and-maths-without-mathptmx
 \usepackage{ifthen}
 \newboolean{useTimesNewRoman}
-\setboolean{useTimesNewRoman}{false} % Set to false if you don't want to use Times New Roman 
-% or if you want to use the default math font (Latin Modern) for math symbols
-\ifthenelse{\boolean{useTimesNewRoman}}{%
-  \usepackage{amsmath,amsthm,amsfonts,amssymb,amscd}%
-  \usepackage{fontspec}%
-  \setmainfont{Times New Roman}%
-}{%
-  \usepackage{amsthm,amscd}%
-  \usepackage{newtxtext,newtxmath}%
+\setboolean{useTimesNewRoman}{false} % Set to false if you don't want to use Times New Roman or if you want to use the default math font (Latin Modern) for math symbols
+\ifthenelse{\boolean{useTimesNewRoman}}{
+    \usepackage{amsmath,amsthm,amsfonts,amssymb,amscd}
+    \usepackage{fontspec}
+    \setmainfont{Times New Roman}
+}{
+    \usepackage{amsthm,amscd}
+    \usepackage{newtxtext,newtxmath}
 }
 
 \theoremstyle{definition}
@@ -56,22 +56,22 @@
 \makeatletter
 \renewenvironment{algorithm}
 {
-  \vskip 20pt
-  \refstepcounter{algorithm}% New algorithm
-  \hrule height.8pt depth0pt \kern2pt% \@fs@pre for \@fs@ruled
-  \renewcommand{\caption}[2][\relax]{% 使用中文 caption
-    {\raggedright\textbf{算法~\thealgorithm} ##2\par}%
-    \ifx\relax##1\relax % #1 is \relax
-      \addcontentsline{loa}{algorithm}{\protect\numberline{\thealgorithm}##2}%
-    \else % #1 is not \relax
-      \addcontentsline{loa}{algorithm}{\protect\numberline{\thealgorithm}##1}%
-    \fi
-    \kern2pt\hrule\kern2pt
-  }
+    \vskip 20pt
+    \refstepcounter{algorithm} % New algorithm
+    \hrule height.8pt depth0pt \kern2pt % \@fs@pre for \@fs@ruled
+    \renewcommand{\caption}[2][\relax]{ % 使用中文 caption
+        {\raggedright\textbf{算法~\thealgorithm} ##2\par}%
+        \ifx\relax##1\relax % #1 is \relax
+            \addcontentsline{loa}{algorithm}{\protect\numberline{\thealgorithm}##2}%
+        \else % #1 is not \relax
+            \addcontentsline{loa}{algorithm}{\protect\numberline{\thealgorithm}##1}%
+        \fi
+        \kern2pt\hrule\kern2pt
+    }
 }{
-  \kern2pt\hrule\relax
-  \vskip 20pt
-}% \@fs@post for \@fs@ruled
+    \kern2pt\hrule\relax
+    \vskip 20pt
+} % \@fs@post for \@fs@ruled
 \makeatother
 
 
@@ -84,21 +84,22 @@
 \newcommand*{\listingref}[1]{\listingscaption~\ref{#1}~}
 
 
-% 代码块，盒子使用 tcolorbox 默认风格
+% 代码块
+% 使用 tcolorbox 默认风格
 % BeforeBeginEnvironment 和 AfterEndEnvironment 在 etoolbox 中
 % see https://tex.stackexchange.com/questions/112559/box-around-minted-environment
 \usepackage[section]{minted}
 \renewcommand{\listingscaption}{代码}
 \usepackage{tcolorbox}
 \usepackage{etoolbox}
-% \BeforeBeginEnvironment{minted}{\begin{tcolorbox}}%
-% \AfterEndEnvironment{minted}{\end{tcolorbox}}%
+% \BeforeBeginEnvironment{minted}{\begin{tcolorbox}}
+% \AfterEndEnvironment{minted}{\end{tcolorbox}}
 \definecolor{bg}{rgb}{0.96,0.96,0.96}
 \setminted{linenos,
-  bgcolor=bg,
-  fontsize=\small,
-  breaklines,
-  mathescape}
+    bgcolor=bg,
+    fontsize=\small,
+    breaklines,
+    mathescape}
 
 
 % caption 自定义
@@ -107,14 +108,19 @@
 \DeclareCaptionLabelSeparator{twospace}{\ ~}
 \captionsetup{labelsep=twospace,font=9pt}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 与毕业设计模板（理工类）中定义规则无关的可选宏包
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 与定义规则无关的可选宏包
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 % 使存在跨行单元的表格中的各单元进行水平高度适配
 % see https://tex.stackexchange.com/questions/73283/how-to-use-multirow
 \usepackage{multirow}
+
 % 提供 cases 环境，方便书写方程组和分段函数
 \usepackage{cases}
+
 % 提供 subfigure 指令，允许在一个 figure 环境中插入多张 graphics
 \usepackage{subcaption}
 
@@ -122,34 +128,44 @@
 % see https://mirrors.mit.edu/CTAN/macros/latex/contrib/extarrows/extarrows-test.pdf
 \usepackage{extarrows}
 
-% 使用三线表：toprule，midrule，bottomrule。
+% 使用三线表：toprule，midrule，bottomrule
 \usepackage{booktabs}
+
 % 表格中支持跨行
 \usepackage{multirow}
+
 % 表格中数字按小数点对齐
 \usepackage{dcolumn}
 \newcolumntype{d}[1]{D{.}{.}{#1}}
+
 % 使用长表格
 \usepackage{longtable}
 \AtBeginEnvironment{longtable}{\zihao{-5}}
+
 % 附带脚注的表格
 \usepackage{threeparttable}
+
 % 附带脚注的长表格
 \usepackage{threeparttablex}
 \AtBeginEnvironment{tablenotes}{\zihao{-5}}
+
 % 提供画图宏包
 \usepackage{tikz}
+
 % 提供 verbatim 环境，minted 中不支持纯文本，可以使用该环境创建无格式文本块
 \usepackage{verbatim}
+
 % 使得可以跳转
 \usepackage[colorlinks,
-  linkcolor=black,
-  citecolor=black,
-  anchorcolor=black,
-  urlcolor=black,
-  unicode=true]{hyperref}
+    linkcolor=black,
+    citecolor=black,
+    anchorcolor=black,
+    urlcolor=black,
+    unicode=true]{hyperref}
 
-\usepackage{cleveref} % 导入 cleveref 宏包
+% 导入 cleveref 宏包
+\usepackage{cleveref}
+
 % 为各种环境定义引用名称
 \crefname{equation}{式}{式}
 \crefname{figure}{图}{图}
@@ -174,6 +190,7 @@
 \crefname{proof}{证明}{证明}
 \crefname{algorithm}{算法}{算法}
 \crefname{listing}{代码}{代码}
+
 % 连续引用的连接词需改为中文
 \newcommand{\crefpairconjunction}{ 和~}
 \newcommand{\crefmiddleconjunction}{、}
@@ -193,8 +210,8 @@
 
 \usepackage{nth}
 
-\fvset{%
-  breaklines=true, % enable line breaking
-  linenos=true, % show line numbers
-  mathescape=true, % enable math mode escape
+\fvset{
+    breaklines=true, % Enable line breaking
+    linenos=true, % Show line numbers
+    mathescape=true % Enable math mode escape
 }
