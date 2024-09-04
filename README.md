@@ -15,6 +15,9 @@ Tongji university undergraduate thesis template (STEM).
 * `/figures`
 图片文件
 
+* `/fonts`
+字体文件
+
 * `/sections`
 章节文件
 
@@ -56,4 +59,4 @@ This repository is a fork originally created by [TJ-CSCCG](http://github.com/TJ-
 
 ## 文档更新日期
 
-2024年5月16日
+2024年9月4日
