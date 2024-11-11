@@ -12,6 +12,9 @@ Tongji university undergraduate thesis template (STEM).
 
 ## 仓库组成
 
+* `/assets`
+模板展示
+
 * `/bib`
 参考文献
 
@@ -33,19 +36,18 @@ Tongji university undergraduate thesis template (STEM).
 * `make.bat`
 编译脚本文件
 
-## 样例展示
-
-The following are sequentially shown: "Cover", "Chinese Abstract", "Contents", "Main Content", "References", and "Acknowledgments".
-
-以下依次展示 “封面”、“中文摘要”、“目录”、“主要内容”、“参考文献” 与 “谢辞”。
+## 模板展示
 
 <p align="center">
-  <img src="https://media.githubusercontent.com/media/TJ-CSCCG/TJCS-Images/tongji-undergrad-thesis/preview/main_page-0001.jpg" width="30%">
-  <img src="https://media.githubusercontent.com/media/TJ-CSCCG/TJCS-Images/tongji-undergrad-thesis/preview/main_page-0002.jpg" width="30%">
-  <img src="https://media.githubusercontent.com/media/TJ-CSCCG/TJCS-Images/tongji-undergrad-thesis/preview/main_page-0004.jpg" width="30%">
-  <img src="https://media.githubusercontent.com/media/TJ-CSCCG/TJCS-Images/tongji-undergrad-thesis/preview/main_page-0005.jpg" width="30%">
-  <img src="https://media.githubusercontent.com/media/TJ-CSCCG/TJCS-Images/tongji-undergrad-thesis/preview/main_page-0010.jpg" width="30%">
-  <img src="https://media.githubusercontent.com/media/TJ-CSCCG/TJCS-Images/tongji-undergrad-thesis/preview/main_page-0011.jpg" width="30%">
+  <img src="assets/Demonstration1.png" width="30%">
+  <img src="assets/Demonstration2.png" width="30%">
+  <img src="assets/Demonstration3.png" width="30%">
+  <img src="assets/Demonstration4.png" width="30%">
+  <img src="assets/Demonstration5.png" width="30%">
+  <img src="assets/Demonstration6.png" width="30%">
+  <img src="assets/Demonstration7.png" width="30%">
+  <img src="assets/Demonstration8.png" width="30%">
+  <img src="assets/Demonstration9.png" width="30%">
 </p>
 
 ## 编译项目
