@@ -33,7 +33,6 @@ if "%flag%" == "all" (
 
 if "%flag%" == "clean" (
     call :clean
-    echo.
     echo Done.
     goto :EOF
 )
