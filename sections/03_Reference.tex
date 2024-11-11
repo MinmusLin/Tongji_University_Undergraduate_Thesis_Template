@@ -2,23 +2,17 @@
 
 \subsection{参考文献}
 
-可使用 \verb|\cite| 命令引用参考文献。\cite{MSSB201404007}
+参考文献。\cite{MSSB201404007}
 
-如果需要同时标注多个参考文献，可使用逗号分隔键值。\cite{MSSB201404007,TJLT200705022}
+参考文献。\cite{MSSB201404007,TJLT200705022}
 
-使用 \verb|\parencite{key1,key2,key3...}| 命令可以在正文中产生带有括号的引用参考文献。如\parencite{MSSB201404007}。
+参考文献。\parencite{MSSB201404007}。
 
-可使用 \verb|\nocite{key1,key2,key3...}| 将参考文献条目加入文献表中，但不在正文中引用。使用 \verb|\nocite{*}| 可将参考文献数据库中的所有条目加入文献表中。
+参考文献。\footfullcite{MSSB201404007}
 
-当我们想在正文（非参考文献章节）中插入对某一参考文献的完整引用时，可以使用 \verb|\fullcite{key1}| 命令。下面是使用 \verb|\fullcite| 命令的引用示例：
+参考文献的完整引用：\fullcite{MSSB201404007}
 
-\fullcite{MSSB201404007}
-
-有时，我们想要用脚注的形式引用某参考文献。\footfullcite{MSSB201404007}
-
-\subsection{脚注}
-
-脚注是一种在文本底部添加注释或补充说明的方式\footnote{通常，我们在脚注里也写完整的句子。在文本中使用脚注时，应该遵循学术规范，尽可能引用可信的来源，并注明出处。}。
+使用 \verb|\nocite{key1,key2,key3...}| 将参考文献条目加入文献表中，但不在正文中引用。使用 \verb|\nocite{*}| 可将参考文献数据库中的所有条目加入文献表中。
 
 \subsection{交叉引用}
 
@@ -26,9 +20,7 @@
 
 请参见第\pageref{sec:introduction}页。
 
-请参见\cref{sec:intro}。
-
-请参见\cref{sec:intro,sec:math}。
+请参见\cref{sec:introduction,sec:math}。
 
 如果需要修改引用词汇，可以在导言区添加如下代码：
 
