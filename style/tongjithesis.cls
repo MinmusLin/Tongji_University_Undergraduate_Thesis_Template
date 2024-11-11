@@ -345,8 +345,8 @@
         \par
     \end{spacing}
     \vskip 5mm
-	\noindent{\heiti\zihao{5}{
-		\textbf{关键词：}#2
+	\noindent{\songti\zihao{5}{
+		\textbf{\bf 关键词：}#2
 	}}~\\
 }
 
