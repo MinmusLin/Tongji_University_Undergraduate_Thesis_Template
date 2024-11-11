@@ -1,0 +1,45 @@
+\section{数学}\label{sec:math}
+
+\subsection{数学符号}
+
+按照国标GB/T 3102.11—1993《物理科学和技术中使用的数学符号》，微分符号$\dd$应使用直立体。除此之外，数学常数也应使用直立体：
+
+\begin{itemize}
+    \item 微分符号$\dd$：\cs{dd}
+    \item 圆周率$\uppi$：\cs{uppi}
+    \item 自然对数的底$\ee$：\cs{ee}
+    \item 虚数单位$\ii$、$\jj$：\cs{ii}、\cs{jj}
+\end{itemize}
+
+\subsection{数学公式}
+
+公式应另起一行居中排版。公式后应注明编号，按章顺序编排，编号右端对齐。
+
+\begin{equation}
+    \frac{\partial^2u}{\partial t^2}=\frac{\partial^2u}{\partial x^2}+\frac{\partial^2u}{\partial y^2}
+\end{equation}
+
+公式较长时最好在等号处转行。
+
+\begin{align}
+         & I(X_1;X_2)-I(X_1;X_2|X_3) \nonumber    \\
+    =    & H(X_2)-H(X_2|X_3) \nonumber            \\
+    =    & H(X_2,X_3)-H(X_3)-H(X_2|X_3) \nonumber \\
+    =    & I(X_2;X_3)-I(X_2;X_3|X_1) \nonumber    \\
+    =    & I(X_2;X_3,X_1) \nonumber               \\
+    \geq & 0
+\end{align}
+
+如果在等号处转行难以实现，也可在$+$、$-$、$\times$、$\div$运算符号处转行。
+
+\begin{multline}
+    \frac{1}{2} \Delta (f_{ij} f^{ij}) =
+    2 \left(\sum_{i<j} \chi_{ij}(\sigma_{i} - \sigma_{j})^{2}
+    + f^{ij} \nabla_{j} \nabla_{i} (\Delta f)  + \nabla_{k} f_{ij} \nabla^{k} f^{ij} +
+    f^{ij} f^{k} \left[2\nabla_{i}R_{jk}- \nabla_{k} R_{ij} \right] \vphantom{\sum_{i<j}} \right) \\
+    - 3H^{2}\left[1+\frac{\dot{\phi}}{2H^2}\right] - \frac{\dot{\phi}^{2}}{2} - \frac{k}{a^{2}}\phi^{2} - \frac{1}{2}\left(\frac{\partial\phi}{\partial t}\right)^{2} + \frac{a^2}{2}\left(\frac{\partial\phi}{\partial x}\right)^{2}
+    + \frac{1}{4}\lambda\phi^{4} + \frac{\beta}{3}\phi^{3} \\
+    -\frac{1}{2}\mu^{2}\phi^{2}(\ln{\phi^{2}} - c)
+    + \frac{e^{2}}{2}\left(\frac{\partial A_{\mu}}{\partial t}\right)^{2} - \frac{e^{2}}{2}\left(\frac{\partial A_{\mu}}{\partial x}\right)^{2}
+    - e^{2}\phi^{2}A_{\mu}A^{\mu} + \frac{1}{4}F_{\mu\nu}F^{\mu\nu}.
+\end{multline}
