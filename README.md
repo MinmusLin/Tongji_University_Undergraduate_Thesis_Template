@@ -12,6 +12,9 @@ Tongji university undergraduate thesis template (STEM).
 
 ## 仓库组成
 
+* `/bib`
+参考文献
+
 * `/figures`
 图片文件
 
@@ -30,6 +33,9 @@ Tongji university undergraduate thesis template (STEM).
 * `main.tex`
 主文档文件
 
+* `make.bat`
+编译脚本文件
+
 ## 样例展示
 
 The following are sequentially shown: "Cover", "Chinese Abstract", "Contents", "Main Content", "References", and "Acknowledgments".
@@ -45,18 +51,26 @@ The following are sequentially shown: "Cover", "Chinese Abstract", "Contents", "
   <img src="https://media.githubusercontent.com/media/TJ-CSCCG/TJCS-Images/tongji-undergrad-thesis/preview/main_page-0011.jpg" width="30%">
 </p>
 
-## 编译命令
+## 编译项目
 
 ```
-lualatex.exe -synctex=1 -interaction=nonstopmode -shell-escape %.tex
+Usage: make [options]
+
+Options:
+  - all      Use lualatex to compile the LaTeX document.
+  - clean    Clean temporary files.
+  - count    Count the number of words in the document.
+  - help     Show this help message.
+
+Note: make without any option is equivalent to make all.
 ```
 
 ## 致谢
 
-This repository is a fork originally created by [TJ-CSCCG](http://github.com/TJ-CSCCG). We would like to express our gratitude to [YukuanHU](https://github.com/YukuanHu), [ganler](https://github.com/ganler) and [skyleaworlder](https://github.com/skyleaworlder) for their contributions and efforts.
+This repository is a [project](https://github.com/TJ-CSCCG/tongji-undergrad-thesis) originally created by [TJ-CSCCG](http://github.com/TJ-CSCCG). We would like to express our gratitude to [them](https://github.com/TJ-CSCCG/tongji-undergrad-thesis/graphs/contributors) for their contributions and efforts.
 
-这个仓库最初是由 [TJ-CSCCG](http://github.com/TJ-CSCCG) 创建的分支。我们要感谢 [YukuanHU](https://github.com/YukuanHu), [ganler](https://github.com/ganler) 与 [skyleaworlder](https://github.com/skyleaworlder) 对同济大学本科毕业设计（论文）模板（理工类）的贡献。
+这个仓库最初是由 [TJ-CSCCG](http://github.com/TJ-CSCCG) 创建的[项目](https://github.com/TJ-CSCCG/tongji-undergrad-thesis)。我们要感谢[他们](https://github.com/TJ-CSCCG/tongji-undergrad-thesis/graphs/contributors)对同济大学本科毕业设计（论文）模板（理工类）的贡献。
 
 ## 文档更新日期
 
-2024年9月4日
+2024年11月11日
