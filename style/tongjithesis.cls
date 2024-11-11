@@ -1,14 +1,9 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% tongjithesis
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{tongjithesis}[tongjithesis]
 
 
 % \LoadClass[UTF8,a4paper,fontset=fandol]{ctexart}
-\LoadClass[UTF8,a4paper,fontset=adobe]{ctexart}
+\LoadClass[UTF8,a4paper,fontset=fandol]{ctexart}
 
 
 % 使用句点（．）替换句号（。）
@@ -345,9 +340,9 @@
         \par
     \end{spacing}
     \vskip 5mm
-	\noindent{\songti\zihao{5}{
-		{\bf 关键词：}#2
-	}}~\\
+    \noindent{\songti\zihao{5}{%
+        \textbf{关键词：}#2
+    }}~\\
 }
 
 

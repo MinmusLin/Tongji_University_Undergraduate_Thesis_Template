@@ -18,9 +18,6 @@ Tongji university undergraduate thesis template (STEM).
 * `/figures`
 图片文件
 
-* `/fonts`
-字体文件
-
 * `/sections`
 章节文件
 
