@@ -16,7 +16,9 @@ if not "%flag%" == "all" if not "%flag%" == "clean" if not "%flag%" == "count" (
 )
 
 if "%flag%" == "all" (
-    del "error.log"
+    if exist "error.log" (
+        del "error.log"
+    )
     call :all
     if ERRORLEVEL 1 (
         copy "%THESIS%.log" "error.log" >nul
