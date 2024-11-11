@@ -113,8 +113,8 @@
 % 设置目录页
 \RequirePackage[titles,subfigure]{tocloft}
 \makeatletter
-\renewcommand{\numberline}[1]{
-    \settowidth\@tempdimb{#1\hspace{0.5em}}
+\renewcommand{\numberline}[1]{%
+    \settowidth\@tempdimb{#1\hspace{0.5em}}%
     \hb@xt@\@tempdimb{\@cftbsnum #1\@cftasnum\hfil}\@cftasnumb}
 \makeatother
 \renewcommand{\cftdot}{$\cdot$}
@@ -334,7 +334,7 @@
         \par
     \end{spacing}
     \vskip 5mm
-    \noindent{\songti\zihao{5}{%
+    \noindent{\songti\zihao{5}{
         \textbf{关键词：}#2
     }}~\\
 }
