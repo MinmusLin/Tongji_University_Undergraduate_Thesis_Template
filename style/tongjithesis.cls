@@ -1,8 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{tongjithesis}[tongjithesis]
-
-
-% \LoadClass[UTF8,a4paper,fontset=fandol]{ctexart}
 \LoadClass[UTF8,a4paper,fontset=fandol]{ctexart}
 
 
@@ -277,9 +274,6 @@
         \uline{\makebox[\covermaxwidth][c]{#1}}
     }
 }
-
-
-% 定义内容布局
 \AtEndOfPackage{
     \InputIfFileExists{style/tongjithesis.cfg}{}{}
 }
